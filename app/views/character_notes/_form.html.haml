@@ -1,0 +1,19 @@
+= form_for @character_note do |f|
+  - if @character_note.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@character_note.errors.count, "error")} prohibited this character_note from being saved:"
+      %ul
+        - @character_note.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :character
+    = f.text_field :character
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :body
+    = f.text_area :body
+  .actions
+    = f.submit 'Save'

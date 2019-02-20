@@ -1,0 +1,30 @@
+---
+- name: Strength
+  abrev: STR
+  children:
+    - Athletics
+    - Grapple
+    - Swim
+    - Aim/Throw
+- name: Reflex
+  abrev: REF
+  children:
+    - Acrobatics
+    - Ride/Pilot
+    - Sleight of Hand
+    - Stealth
+- name: Intelegence
+  abrev: INT
+  children: 
+    - Deception
+    - Presuasion
+    - Infiltration
+    - Survival
+- name: Core
+  category: true
+  children:
+    - Perception
+- name: Vocations
+  category: true
+- name: Proficiencies
+  category: true

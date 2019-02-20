@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Character:
+  = @character_note.character
+%p
+  %b Title:
+  = @character_note.title
+%p
+  %b Body:
+  = @character_note.body
+
+= link_to 'Edit', edit_character_note_path(@character_note)
+\|
+= link_to 'Back', character_notes_path

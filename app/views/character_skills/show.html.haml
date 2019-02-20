@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Character:
+  = @character_skill.character
+%p
+  %b Skill:
+  = @character_skill.skill
+%p
+  %b Score:
+  = @character_skill.score
+
+= link_to 'Edit', edit_character_skill_path(@character_skill)
+\|
+= link_to 'Back', character_skills_path
